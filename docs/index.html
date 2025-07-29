@@ -3,94 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Research Project | Blockchain & IoT in Food Supply Chains</title>
-</head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #333;">
+  <title>Blockchain & IoT Research</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+    }
 
-  <header style="background-color: #00695c; color: white; padding: 2rem 1rem; text-align: center;">
-    <h1 style="margin-bottom: 0.5rem;">Leveraging Blockchain and IoT</h1>
-    <h2 style="margin-top: 0;">For Transparent and Sustainable Food Supply Chains</h2>
+    header {
+      background-color: #023e8a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card i {
+      font-size: 2.5rem;
+      color: #0077b6;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #023e8a;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Leveraging Blockchain and IoT for Transparent and Sustainable Food Supply Chains</h1>
+    <p>Research Project | University of Peradeniya</p>
   </header>
 
-  <main style="padding: 2rem;">
-    
-    <section style="margin-bottom: 2rem;">
-      <h3 style="color: #00695c;">Project Overview</h3>
-      <p>
-        This research explores how blockchain and IoT technologies can be integrated to ensure transparency, sustainability, and trust in food supply chains.
-        By combining immutable ledger systems with real-time sensor data, the solution aims to prevent fraud, reduce waste, and ensure traceability from farm to table.
-      </p>
-    </section>
+  <div class="container">
+    <div class="card">
+      <i class="fas fa-microchip"></i>
+      <h2>Smart Tracking</h2>
+      <p>Real-time monitoring of food transportation using IoT sensors to record temperature, humidity, and location.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-seedling"></i>
+      <h2>Sustainability</h2>
+      <p>Supports sustainable practices through transparency, reducing waste and optimizing resources.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-lock"></i>
+      <h2>Blockchain Security</h2>
+      <p>Ensures data immutability and trust by leveraging blockchain technology for secure record keeping.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-bullseye"></i>
+      <h2>Objective 1</h2>
+      <p>Design an end-to-end framework for food traceability using IoT and blockchain integration.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-database"></i>
+      <h2>Objective 2</h2>
+      <p>Implement decentralized data logging to prevent tampering and provide audit trails.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-network-wired"></i>
+      <h2>Objective 3</h2>
+      <p>Analyze system scalability and performance under real-world scenarios and data loads.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-user-graduate"></i>
+      <h2>Researcher</h2>
+      <p>Shantosh Muraleetharan<br/>Computer Engineering Undergraduate<br/>University of Peradeniya</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-chalkboard-teacher"></i>
+      <h2>Supervisor</h2>
+      <p>Dr. [Supervisor's Name]<br/>Senior Lecturer, Dept. of Computer Engineering<br/>University of Peradeniya</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-star"></i>
+      <h2>Special Highlight</h2>
+      <p>Utilizing Hyperledger Fabric and MQTT protocol for high-efficiency and real-time communication in the supply chain.</p>
+    </div>
+  </div>
 
-    <section style="margin-bottom: 2rem;">
-      <h3 style="color: #00695c;">Objectives</h3>
-      <ul>
-        <li>Enhance transparency in the food supply process</li>
-        <li>Improve traceability of goods from origin to destination</li>
-        <li>Minimize food waste through timely interventions</li>
-        <li>Ensure data integrity and accountability via blockchain</li>
-      </ul>
-    </section>
-
-    <section style="margin-bottom: 2rem;">
-      <h3 style="color: #00695c;">Key Technologies</h3>
-      <ul>
-        <li>Hyperledger Fabric (Private Blockchain)</li>
-        <li>IoT Devices for Environmental Monitoring</li>
-        <li>Smart Contracts for Secure Transactions</li>
-        <li>Web Interface for Real-Time Data Visualization</li>
-      </ul>
-    </section>
-
-    <section style="margin-bottom: 2rem;">
-      <h3 style="color: #00695c;">Expected Outcomes</h3>
-      <ul>
-        <li>Demonstration of a working prototype integrated with IoT and blockchain</li>
-        <li>Real-time monitoring of environmental factors like temperature and humidity</li>
-        <li>Immutable data records for auditing supply chain events</li>
-        <li>Improved trust between producers, transporters, and consumers</li>
-      </ul>
-    </section>
-
-    <section style="margin-bottom: 2rem;">
-      <h3 style="color: #00695c;">Research Team</h3>
-      <p><strong>Shantosh Muraleetharan</strong><br/>
-        Department of Computer Engineering,<br/>
-        University of Peradeniya, Sri Lanka</p>
-
-      <p><strong>J P D D M Jayawickrama</strong><br/>
-        Department of Electrical & Electronic Engineering,<br/>
-        University of Peradeniya, Sri Lanka</p>
-    </section>
-
-    <section style="margin-bottom: 2rem;">
-      <h3 style="color: #00695c;">Supervisor</h3>
-      <p><strong>Dr. Upul Jayasinghe</strong><br/>
-        Senior Lecturer,<br/>
-        Department of Computer Engineering,<br/>
-        University of Peradeniya, Sri Lanka</p>
-    </section>
-
-    <section style="margin-bottom: 2rem;">
-      <h3 style="color: #00695c;">Team Member</h3>
-      <p><strong>K V D Lakmali</strong><br/>
-        Department of Computer Engineering,<br/>
-        University of Peradeniya, Sri Lanka</p>
-    </section>
-
-    <section style="margin-bottom: 2rem;">
-      <h3 style="color: #00695c;">Contact</h3>
-      <p>
-        For inquiries or collaboration opportunities, please reach out:<br/>
-        <strong>Email:</strong> shantoshmuraleetharan@gmail.com
-      </p>
-    </section>
-
-  </main>
-
-  <footer style="background-color: #004d40; color: white; text-align: center; padding: 1rem;">
-    <p>&copy; 2025 Shantosh Muraleetharan. All rights reserved.</p>
+  <footer>
+    &copy; 2025 University of Peradeniya | Blockchain & IoT Research
   </footer>
-
 </body>
 </html>
