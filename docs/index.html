@@ -2,51 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research Page</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Supply Chain Dashboard</title>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-dgZY+KUNv5tOK3eFQ6DN+Zs0fwFl4U7b0bqnm61vBgyq5VV7tgiwklAGc1BjwJISqKR0vDjV73jhs6IFjAqV6A=="
     crossorigin="anonymous"
-    referrerpolicy="no-referrer"
   />
   <style>
-  body {
-    background-color: lightyellow;
-  }
-</style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7fa;
+      color: #333;
+    }
 
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card i {
+      font-size: 2.5rem;
+      color: #4CAF50;
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+      color: #222;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      .cards-container {
+        padding: 20px;
+      }
+
+      .card {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>Leveraging Blockchain and IoT for Transparent Food Supply Chains</h1>
-    <p>Enhancing trust, traceability, and sustainability in food distribution.</p>
+    <h1>Leveraging Blockchain & IoT for Transparent Food Supply Chains</h1>
   </header>
 
-  <main class="cards-container">
+  <div class="cards-container">
+
     <div class="card">
-      <div class="icon"><i class="fas fa-rocket"></i></div>
+      <i class="fas fa-rocket"></i>
       <h2>Smart Tracking</h2>
       <p>Real-time monitoring of food transportation using IoT sensors to record temperature, humidity, and location.</p>
     </div>
 
     <div class="card">
-      <div class="icon"><i class="fas fa-lock"></i></div>
-      <h2>Immutable Ledger</h2>
-      <p>Every step of the supply chain is securely recorded on the blockchain to prevent tampering and ensure data integrity.</p>
+      <i class="fas fa-microchip"></i>
+      <h2>IoT Sensors</h2>
+      <p>Integration of embedded sensors to capture vital environmental parameters for safety and quality assurance.</p>
     </div>
 
     <div class="card">
-      <div class="icon"><i class="fas fa-leaf"></i></div>
-      <h2>Sustainability Insights</h2>
-      <p>Analyze the environmental impact and carbon footprint at each stage of food production and transport.</p>
+      <i class="fas fa-database"></i>
+      <h2>Blockchain Ledger</h2>
+      <p>Immutable and decentralized ledger to store supply chain data and enhance trust among stakeholders.</p>
     </div>
-  </main>
 
-  <footer>
-    <p>© 2025 | Research by Shantosh Muraleetharan, University of Peradeniya</p>
-  </footer>
+    <div class="card">
+      <i class="fas fa-shield-alt"></i>
+      <h2>Security & Integrity</h2>
+      <p>Ensuring that food data cannot be tampered with during transit or handoffs using smart contracts.</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-seedling"></i>
+      <h2>Sustainability</h2>
+      <p>Supports sustainable practices through transparency, reducing waste and optimizing resources.</p>
+    </div>
+
+  </div>
+
 </body>
 </html>
