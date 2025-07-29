@@ -3,31 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blockchain & IoT Research</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Leveraging Blockchain and IoT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f4f8;
+      background-color: #f4f7fa;
       color: #333;
     }
 
     header {
-      background-color: #023e8a;
+      background-color: #4CAF50;
       color: white;
       padding: 2rem;
       text-align: center;
     }
 
-    h1 {
+    header h1 {
       margin: 0;
       font-size: 2rem;
     }
 
     .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 1.5rem;
       padding: 2rem;
       max-width: 1200px;
@@ -35,88 +36,96 @@
     }
 
     .card {
-      background: white;
+      background-color: white;
       border-radius: 15px;
-      padding: 1.5rem;
+      padding: 2rem;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease-in-out;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
+      width: 25%;
+      min-width: 250px;
     }
 
     .card i {
       font-size: 2.5rem;
-      color: #0077b6;
+      color: #4CAF50;
       margin-bottom: 1rem;
     }
 
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
     footer {
-      text-align: center;
-      padding: 1.5rem;
-      background-color: #023e8a;
+      background-color: #4CAF50;
       color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 80%;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Leveraging Blockchain and IoT for Transparent and Sustainable Food Supply Chains</h1>
-    <p>Research Project | University of Peradeniya</p>
   </header>
 
-  <div class="container">
-    <div class="card">
-      <i class="fas fa-microchip"></i>
-      <h2>Smart Tracking</h2>
-      <p>Real-time monitoring of food transportation using IoT sensors to record temperature, humidity, and location.</p>
-    </div>
+  <section class="container">
     <div class="card">
       <i class="fas fa-seedling"></i>
       <h2>Sustainability</h2>
       <p>Supports sustainable practices through transparency, reducing waste and optimizing resources.</p>
     </div>
+
+    <div class="card">
+      <i class="fas fa-microchip"></i>
+      <h2>Smart Tracking</h2>
+      <p>Real-time monitoring of food transportation using IoT sensors to record temperature, humidity, and location.</p>
+    </div>
+
     <div class="card">
       <i class="fas fa-lock"></i>
-      <h2>Blockchain Security</h2>
-      <p>Ensures data immutability and trust by leveraging blockchain technology for secure record keeping.</p>
+      <h2>Security & Immutability</h2>
+      <p>Ensures secure, tamper-proof data using blockchain technology, increasing trust and traceability.</p>
     </div>
-    <div class="card">
-      <i class="fas fa-bullseye"></i>
-      <h2>Objective 1</h2>
-      <p>Design an end-to-end framework for food traceability using IoT and blockchain integration.</p>
-    </div>
-    <div class="card">
-      <i class="fas fa-database"></i>
-      <h2>Objective 2</h2>
-      <p>Implement decentralized data logging to prevent tampering and provide audit trails.</p>
-    </div>
-    <div class="card">
-      <i class="fas fa-network-wired"></i>
-      <h2>Objective 3</h2>
-      <p>Analyze system scalability and performance under real-world scenarios and data loads.</p>
-    </div>
+  </section>
+
+  <section class="container">
     <div class="card">
       <i class="fas fa-user-graduate"></i>
       <h2>Researcher</h2>
-      <p>Shantosh Muraleetharan<br/>Computer Engineering Undergraduate<br/>University of Peradeniya</p>
+      <p>Shantosh Muraleetharan<br>Department of Computer Engineering<br>University of Peradeniya</p>
     </div>
+    
+    <div class="card">
+      <i class="fas fa-user-graduate"></i>
+      <h2>Researcher</h2>
+      <p>J P D D M Jayawickrama<br>Department of Electrical & Electronic Engineering,<br>University of Peradeniya</p>
+    </div>
+
     <div class="card">
       <i class="fas fa-chalkboard-teacher"></i>
       <h2>Supervisor</h2>
-      <p>Dr. [Supervisor's Name]<br/>Senior Lecturer, Dept. of Computer Engineering<br/>University of Peradeniya</p>
+      <p>Dr. Upul Jayasinghe<br>Department of Computer Engineering<br>University of Peradeniya</p>
     </div>
-    <div class="card">
-      <i class="fas fa-star"></i>
-      <h2>Special Highlight</h2>
-      <p>Utilizing Hyperledger Fabric and MQTT protocol for high-efficiency and real-time communication in the supply chain.</p>
-    </div>
-  </div>
+  </section>
 
   <footer>
-    &copy; 2025 University of Peradeniya | Blockchain & IoT Research
+    &copy; 2025 Shantosh Muraleetharan | University of Peradeniya
   </footer>
+
 </body>
 </html>
+
